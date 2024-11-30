@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .right {
+        overflow-y: auto;
+        height: 550px;
+        overflow-x: hidden;
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+      }
+      .left{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+       gap: 30px;
+      }
+      main{
+        display: flex;
+        justify-content: center;
+        padding: 50px 150px;
+        justify-content: space-between;
+
+      }
+      input{
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 10px;
+        outline: none;
+      }
+      .btn{
+        border: 1px solid black;
+        background-color: rgb(39, 39, 204);
+         border-radius: 5px;
+         color: white;
+        padding: 10px;
+      }
+      .card{
+        width: 300px;
+        height: 380px;
+        border-radius: 5px;
+        border: 2px solid black;
+        word-break: break-all;
+        
+      }
+      .card img{
+        width: 100%;
+        height: 200px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      .card p{
+        padding: 0 10px;
+        font-size: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+      }
+      h1{
+        text-align: center;
+        color: rgb(39, 39, 204);
+      }
+      select{
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="left">
+        <h1>Movie Search!!!</h1>
+        <input type="text" class="input" />
+        <select class="select">
+          <option >Janr tanlang</option>
+          <option value="Documentary">Documentary</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Animation">Animation</option>
+          <option value="Horror">Horror</option>
+          <option value="Drama">Drama</option>
+        </select>
+        <select class="sort">
+          <option value="az">A-Z</option>
+          <option value="za">Z-A</option>
+          <option value="ratinglow">Reyting past</option>
+          <option value="ratinghigh">Reyting yuqori</option>
+          <option value="yearlow">Yili eski</option>
+          <option value="yearhigh">Yili yangi</option>
+        </select>
+        <button class="btn">Qidirish</button>
+      </div>
+      <div class="right">
+      
+      </div>
+    </main>
+
+    <script src="./movies.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
